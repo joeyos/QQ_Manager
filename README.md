@@ -1,6 +1,7 @@
 ## Qt仿腾讯管家界面
 ---
 #### 图形界面
+![](https://github.com/zhangquan1995/zhangquan1995.github.io/tree/master/css/QQ_Manager/1.png)
 
 #### 历程
 
