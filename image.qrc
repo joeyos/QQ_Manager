@@ -1,0 +1,41 @@
+<RCC>
+    <qresource prefix="/">
+        <file>image/2563.png</file>
+        <file>image/below_clinic.png</file>
+        <file>image/below_phone.png</file>
+        <file>image/below_repair.png</file>
+        <file>image/below_soft.png</file>
+        <file>image/below_test.png</file>
+        <file>image/five.png</file>
+        <file>image/four.png</file>
+        <file>image/head_logo.png</file>
+        <file>image/Lv7.png</file>
+        <file>image/mid_check.png</file>
+        <file>image/mid_fullcheck.png</file>
+        <file>image/mid_qq.png</file>
+        <file>image/mid_safetytask.png</file>
+        <file>image/one.png</file>
+        <file>image/right_mid_enter.png</file>
+        <file>image/right_on_clothes.png</file>
+        <file>image/right_on_exit.png</file>
+        <file>image/right_on_menu.png</file>
+        <file>image/right_on_minimize.png</file>
+        <file>image/right_on_phone.png</file>
+        <file>image/right_on_safe.png</file>
+        <file>image/six.png</file>
+        <file>image/three.png</file>
+        <file>image/two.png</file>
+        <file>image/setting.png</file>
+        <file>image/gif1.gif</file>
+        <file>image/background.png</file>
+        <file>image/menu_hover.png</file>
+        <file>image/below_hover.png</file>
+        <file>image/font_hover.png</file>
+        <file>image/gif2.gif</file>
+        <file>image/gif3.gif</file>
+        <file>image/gif4.gif</file>
+        <file>image/gif5.gif</file>
+        <file>image/gif6.gif</file>
+        <file>image/pc2.jpg</file>
+    </qresource>
+</RCC>

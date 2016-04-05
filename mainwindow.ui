@@ -1,0 +1,1398 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>918</width>
+    <height>598</height>
+   </rect>
+  </property>
+  <property name="mouseTracking">
+   <bool>false</bool>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">* {
+font-family:'微软雅黑';
+}
+
+/*设置背景图片*/
+QMainWindow{
+border-image:url(&quot;:/image/background.png&quot;);
+}
+</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>60</x>
+      <y>10</y>
+      <width>81</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>微软雅黑</family>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="text">
+     <string>电脑管家</string>
+    </property>
+   </widget>
+   <widget class="QToolButton" name="headButton">
+    <property name="geometry">
+     <rect>
+      <x>2</x>
+      <y>2</y>
+      <width>47</width>
+      <height>47</height>
+     </rect>
+    </property>
+    <property name="mouseTracking">
+     <bool>false</bool>
+    </property>
+    <property name="autoFillBackground">
+     <bool>false</bool>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">/* 设置按钮的属性 */
+
+QToolButton[objectName=&quot;headButton&quot;] {
+border:0px; /*取消按钮边界，使按钮透明*/
+color:white;
+}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset>
+      <normaloff>:/image/head_logo.png</normaloff>:/image/head_logo.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>42</width>
+      <height>42</height>
+     </size>
+    </property>
+    <property name="checkable">
+     <bool>false</bool>
+    </property>
+    <property name="checked">
+     <bool>false</bool>
+    </property>
+    <property name="autoRepeat">
+     <bool>false</bool>
+    </property>
+    <property name="autoExclusive">
+     <bool>true</bool>
+    </property>
+    <property name="autoRaise">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QWidget" name="layoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>61</x>
+      <y>31</y>
+      <width>97</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <item>
+      <widget class="QToolButton" name="a1Button">
+       <property name="enabled">
+        <bool>true</bool>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">/* 设置按钮的属性 */
+
+QToolButton[objectName=&quot;a1Button&quot;] {
+border:0px; /*取消按钮边界，使按钮透明*/
+color:white;
+}</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="icon">
+        <iconset>
+         <normaloff>:/image/Lv7.png</normaloff>:/image/Lv7.png</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>31</width>
+         <height>11</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QToolButton" name="a2Button">
+       <property name="styleSheet">
+        <string notr="true">/* 设置按钮的属性 */
+
+QToolButton[objectName=&quot;a2Button&quot;] {
+border:0px; /*取消按钮边界，使按钮透明*/
+color:white;
+}</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="icon">
+        <iconset>
+         <normaloff>:/image/2563.png</normaloff>:/image/2563.png</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>52</width>
+         <height>15</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QWidget" name="layoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>760</x>
+      <y>10</y>
+      <width>152</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <layout class="QHBoxLayout" name="horizontalLayout_2">
+     <item>
+      <widget class="QToolButton" name="phoneButton">
+       <property name="minimumSize">
+        <size>
+         <width>18</width>
+         <height>18</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">/* 设置按钮的属性 */
+
+QToolButton[objectName=&quot;phoneButton&quot;] {
+border:0px; /*取消按钮边界，使按钮透明*/
+color:white;
+}
+QToolButton[objectName=&quot;phoneButton&quot;]:hover {
+image:url(:/image/menu_hover.png);/*鼠标放上去是显示的效果*/
+}
+
+</string>
+       </property>
+       <property name="text">
+        <string>...</string>
+       </property>
+       <property name="icon">
+        <iconset>
+         <normaloff>:/image/right_on_phone.png</normaloff>:/image/right_on_phone.png</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>13</width>
+         <height>17</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QToolButton" name="safeButton">
+       <property name="minimumSize">
+        <size>
+         <width>20</width>
+         <height>20</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">/* 设置按钮的属性 */
+
+QToolButton[objectName=&quot;safeButton&quot;] {
+border:0px; /*取消按钮边界，使按钮透明*/
+color:white;
+}
+QToolButton[objectName=&quot;safeButton&quot;]:hover {
+image:url(:/image/menu_hover.png);/*鼠标放上去是显示的效果*/
+}</string>
+       </property>
+       <property name="text">
+        <string>...</string>
+       </property>
+       <property name="icon">
+        <iconset>
+         <normaloff>:/image/right_on_safe.png</normaloff>:/image/right_on_safe.png</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>13</width>
+         <height>14</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QToolButton" name="clothesButton">
+       <property name="minimumSize">
+        <size>
+         <width>20</width>
+         <height>20</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">/* 设置按钮的属性 */
+
+QToolButton[objectName=&quot;clothesButton&quot;] {
+border:0px; /*取消按钮边界，使按钮透明*/
+color:white;
+}
+QToolButton[objectName=&quot;clothesButton&quot;]:hover {
+image:url(:/image/menu_hover.png);/*鼠标放上去是显示的效果*/
+}</string>
+       </property>
+       <property name="text">
+        <string>...</string>
+       </property>
+       <property name="icon">
+        <iconset>
+         <normaloff>:/image/right_on_clothes.png</normaloff>:/image/right_on_clothes.png</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>16</width>
+         <height>13</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="MenuButton" name="menuPushButton">
+       <property name="minimumSize">
+        <size>
+         <width>20</width>
+         <height>20</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">/* 设置按钮的属性 */
+QPushButton[objectName=&quot;menuPushButton&quot;] {
+border:0px; /*取消按钮边界，使按钮透明*/
+color:white;
+}
+QPushButton[objectName=&quot;menuPushButton&quot;]:hover {
+image:url(:/image/menu_hover.png);/*鼠标放上去是显示的效果*/
+}</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="icon">
+        <iconset>
+         <normaloff>:/image/right_on_menu.png</normaloff>:/image/right_on_menu.png</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>14</width>
+         <height>13</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QToolButton" name="miniButton">
+       <property name="minimumSize">
+        <size>
+         <width>20</width>
+         <height>20</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">/* 设置按钮的属性 */
+
+QToolButton[objectName=&quot;miniButton&quot;] {
+border:0px; /*取消按钮边界，使按钮透明*/
+color:white;
+}
+QToolButton[objectName=&quot;miniButton&quot;]:hover {
+image:url(:/image/menu_hover.png);/*鼠标放上去是显示的效果*/
+}</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="icon">
+        <iconset>
+         <normaloff>:/image/right_on_minimize.png</normaloff>:/image/right_on_minimize.png</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>12</width>
+         <height>1</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QToolButton" name="exitButton">
+       <property name="minimumSize">
+        <size>
+         <width>20</width>
+         <height>20</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">/* 设置按钮的属性 */
+
+QToolButton[objectName=&quot;exitButton&quot;] {
+border:0px; /*取消按钮边界，使按钮透明*/
+color:white;
+}
+QToolButton[objectName=&quot;exitButton&quot;]:hover {
+image:url(:/image/menu_hover.png);/*鼠标放上去是显示的效果*/
+}</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="icon">
+        <iconset>
+         <normaloff>:/image/right_on_exit.png</normaloff>:/image/right_on_exit.png</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>11</width>
+         <height>11</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QToolButton" name="enterButton">
+    <property name="geometry">
+     <rect>
+      <x>860</x>
+      <y>45</y>
+      <width>48</width>
+      <height>48</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">/* 设置按钮的属性 */
+
+QToolButton[objectName=&quot;enterButton&quot;] {
+border:0px; /*取消按钮边界，使按钮透明*/
+color:white;
+}
+</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset>
+      <normaloff>:/image/right_mid_enter.png</normaloff>:/image/right_mid_enter.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>46</width>
+      <height>46</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QStackedWidget" name="stackedWidget">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>120</y>
+      <width>911</width>
+      <height>401</height>
+     </rect>
+    </property>
+    <property name="currentIndex">
+     <number>0</number>
+    </property>
+    <widget class="QWidget" name="page">
+     <widget class="QToolButton" name="checkButton">
+      <property name="geometry">
+       <rect>
+        <x>50</x>
+        <y>30</y>
+        <width>194</width>
+        <height>208</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">/* 设置按钮的属性 */
+QToolButton[objectName=&quot;checkButton&quot;] {
+border:0px; /*取消按钮边界，使按钮透明*/
+color:white;
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="icon">
+       <iconset>
+        <normaloff>:/image/mid_check.png</normaloff>:/image/mid_check.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>192</width>
+        <height>206</height>
+       </size>
+      </property>
+     </widget>
+     <widget class="QLabel" name="giflabel">
+      <property name="geometry">
+       <rect>
+        <x>50</x>
+        <y>30</y>
+        <width>194</width>
+        <height>208</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="fullchecklabel">
+      <property name="geometry">
+       <rect>
+        <x>370</x>
+        <y>0</y>
+        <width>321</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>微软雅黑</family>
+        <pointsize>24</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(255, 255, 255);</string>
+      </property>
+      <property name="text">
+       <string>安全环境，从体检开始</string>
+      </property>
+     </widget>
+     <widget class="QToolButton" name="safetytaskButton">
+      <property name="geometry">
+       <rect>
+        <x>360</x>
+        <y>130</y>
+        <width>68</width>
+        <height>68</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">/* 设置按钮的属性 */
+QToolButton[objectName=&quot;safetytaskButton&quot;] {
+border:0px; /*取消按钮边界，使按钮透明*/
+color:white;
+}
+</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="icon">
+       <iconset>
+        <normaloff>:/image/mid_safetytask.png</normaloff>:/image/mid_safetytask.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>65</width>
+        <height>65</height>
+       </size>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_2">
+      <property name="geometry">
+       <rect>
+        <x>440</x>
+        <y>172</y>
+        <width>16</width>
+        <height>19</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>微软雅黑</family>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(255, 85, 0);</string>
+      </property>
+      <property name="text">
+       <string>6</string>
+      </property>
+     </widget>
+     <widget class="QToolButton" name="b1Button">
+      <property name="geometry">
+       <rect>
+        <x>430</x>
+        <y>130</y>
+        <width>121</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>微软雅黑</family>
+        <pointsize>18</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">/* 设置按钮的属性 */
+
+QToolButton[objectName=&quot;b1Button&quot;] {
+border:0px; /*取消按钮边界，使按钮透明*/
+color:white;
+}
+</string>
+      </property>
+      <property name="text">
+       <string>安全任务</string>
+      </property>
+     </widget>
+     <widget class="QToolButton" name="c1Button">
+      <property name="geometry">
+       <rect>
+        <x>670</x>
+        <y>130</y>
+        <width>101</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>微软雅黑</family>
+        <pointsize>18</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">/* 设置按钮的属性 */
+
+QToolButton[objectName=&quot;c1Button&quot;] {
+border:0px; /*取消按钮边界，使按钮透明*/
+color:white;
+}
+</string>
+      </property>
+      <property name="text">
+       <string>账号宝</string>
+      </property>
+     </widget>
+     <widget class="QToolButton" name="b3Button">
+      <property name="geometry">
+       <rect>
+        <x>510</x>
+        <y>170</y>
+        <width>50</width>
+        <height>22</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>微软雅黑</family>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">/* 设置按钮的属性 */
+
+QToolButton[objectName=&quot;b3Button&quot;] {
+border:0px; /*取消按钮边界，使按钮透明*/
+color: rgb(0, 255, 255);
+}
+</string>
+      </property>
+      <property name="text">
+       <string>去完成</string>
+      </property>
+     </widget>
+     <widget class="QToolButton" name="qqButton">
+      <property name="geometry">
+       <rect>
+        <x>600</x>
+        <y>130</y>
+        <width>68</width>
+        <height>68</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">/* 设置按钮的属性 */
+
+QToolButton[objectName=&quot;qqButton&quot;] {
+border:0px; /*取消按钮边界，使按钮透明*/
+color:white;
+}
+</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="icon">
+       <iconset>
+        <normaloff>:/image/mid_qq.png</normaloff>:/image/mid_qq.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>65</width>
+        <height>65</height>
+       </size>
+      </property>
+     </widget>
+     <widget class="QToolButton" name="b2Button">
+      <property name="geometry">
+       <rect>
+        <x>448</x>
+        <y>170</y>
+        <width>63</width>
+        <height>22</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>微软雅黑</family>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">/* 设置按钮的属性 */
+
+QToolButton[objectName=&quot;b2Button&quot;] {
+border:0px; /*取消按钮边界，使按钮透明*/
+color:white;
+}</string>
+      </property>
+      <property name="text">
+       <string>个未完成</string>
+      </property>
+     </widget>
+     <widget class="QToolButton" name="c2Button">
+      <property name="geometry">
+       <rect>
+        <x>680</x>
+        <y>170</y>
+        <width>131</width>
+        <height>19</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>微软雅黑</family>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">/* 设置按钮的属性 */
+
+QToolButton[objectName=&quot;c2Button&quot;] {
+border:0px; /*取消按钮边界，使按钮透明*/
+color:white;
+}
+</string>
+      </property>
+      <property name="text">
+       <string>加固QQ账号，更安全</string>
+      </property>
+     </widget>
+     <widget class="QToolButton" name="fullcheckButton">
+      <property name="geometry">
+       <rect>
+        <x>700</x>
+        <y>0</y>
+        <width>182</width>
+        <height>58</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">/* 设置按钮的属性 */
+
+QToolButton[objectName=&quot;fullcheckButton&quot;] {
+border:0px; /*取消按钮边界，使按钮透明*/
+color:white;
+}
+
+</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="icon">
+       <iconset>
+        <normaloff>:/image/mid_fullcheck.png</normaloff>:/image/mid_fullcheck.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>180</width>
+        <height>56</height>
+       </size>
+      </property>
+     </widget>
+     <widget class="QToolButton" name="d3Button">
+      <property name="geometry">
+       <rect>
+        <x>340</x>
+        <y>350</y>
+        <width>38</width>
+        <height>19</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>微软雅黑</family>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">/* 设置按钮的属性 */
+
+QToolButton[objectName=&quot;d3Button&quot;] {
+border:0px; /*取消按钮边界，使按钮透明*/
+color: rgb(0, 255, 255);
+}
+
+</string>
+      </property>
+      <property name="text">
+       <string>详情</string>
+      </property>
+     </widget>
+     <widget class="QToolButton" name="d2Button">
+      <property name="geometry">
+       <rect>
+        <x>100</x>
+        <y>350</y>
+        <width>241</width>
+        <height>19</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>微软雅黑</family>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">/* 设置按钮的属性 */
+
+QToolButton[objectName=&quot;d2Button&quot;] {
+border:0px; /*取消按钮边界，使按钮透明*/
+	color: rgb(144, 144, 144);
+}</string>
+      </property>
+      <property name="text">
+       <string>管家连斩“安全奥斯卡”AV-C测评16星</string>
+      </property>
+     </widget>
+     <widget class="QToolButton" name="testButton">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>310</y>
+        <width>68</width>
+        <height>76</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">/* 设置按钮的属性 */
+
+QToolButton[objectName=&quot;testButton&quot;] {
+border:0px; /*取消按钮边界，使按钮透明*/
+color:white;
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="icon">
+       <iconset>
+        <normaloff>:/image/below_test.png</normaloff>:/image/below_test.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>66</width>
+        <height>74</height>
+       </size>
+      </property>
+     </widget>
+     <widget class="QToolButton" name="d1Button">
+      <property name="geometry">
+       <rect>
+        <x>100</x>
+        <y>320</y>
+        <width>181</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>微软雅黑</family>
+        <pointsize>14</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">/* 设置按钮的属性 */
+
+QToolButton[objectName=&quot;d1Button&quot;] {
+border:0px; /*取消按钮边界，使按钮透明*/
+color:white;
+}
+</string>
+      </property>
+      <property name="text">
+       <string>国际测评，再破纪录</string>
+      </property>
+     </widget>
+     <widget class="QToolButton" name="e1Button">
+      <property name="geometry">
+       <rect>
+        <x>543</x>
+        <y>360</y>
+        <width>59</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">/* 设置按钮的属性 */
+
+QToolButton[objectName=&quot;e1Button&quot;] {
+border:0px; /*取消按钮边界，使按钮透明*/
+color:white;
+}
+QToolButton[objectName=&quot;e1Button&quot;]:hover {
+image:url(:/image/font_hover.png);/*鼠标放上去是显示的效果*/
+}</string>
+      </property>
+      <property name="text">
+       <string>软件管理</string>
+      </property>
+     </widget>
+     <widget class="QToolButton" name="e4Button">
+      <property name="geometry">
+       <rect>
+        <x>830</x>
+        <y>360</y>
+        <width>59</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">/* 设置按钮的属性 */
+
+QToolButton[objectName=&quot;e4Button&quot;] {
+border:0px; /*取消按钮边界，使按钮透明*/
+color:white;
+}
+QToolButton[objectName=&quot;e4Button&quot;]:hover {
+image:url(:/image/font_hover.png);/*鼠标放上去是显示的效果*/
+}</string>
+      </property>
+      <property name="text">
+       <string>我的手机</string>
+      </property>
+     </widget>
+     <widget class="QToolButton" name="e3Button">
+      <property name="geometry">
+       <rect>
+        <x>735</x>
+        <y>360</y>
+        <width>59</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">/* 设置按钮的属性 */
+
+QToolButton[objectName=&quot;e3Button&quot;] {
+border:0px; /*取消按钮边界，使按钮透明*/
+color:white;
+}
+QToolButton[objectName=&quot;e3Button&quot;]:hover {
+image:url(:/image/font_hover.png);/*鼠标放上去是显示的效果*/
+}</string>
+      </property>
+      <property name="text">
+       <string>修复漏洞</string>
+      </property>
+     </widget>
+     <widget class="QToolButton" name="e2Button">
+      <property name="geometry">
+       <rect>
+        <x>640</x>
+        <y>360</y>
+        <width>59</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">/* 设置按钮的属性 */
+
+QToolButton[objectName=&quot;e2Button&quot;] {
+border:0px; /*取消按钮边界，使按钮透明*/
+color:white;
+}
+QToolButton[objectName=&quot;e2Button&quot;]:hover {
+image:url(:/image/font_hover.png);/*鼠标放上去是显示的效果*/
+}</string>
+      </property>
+      <property name="text">
+       <string>电脑诊所</string>
+      </property>
+     </widget>
+     <widget class="QWidget" name="">
+      <property name="geometry">
+       <rect>
+        <x>540</x>
+        <y>290</y>
+        <width>352</width>
+        <height>67</height>
+       </rect>
+      </property>
+      <layout class="QHBoxLayout" name="horizontalLayout_3">
+       <property name="spacing">
+        <number>30</number>
+       </property>
+       <item>
+        <widget class="QToolButton" name="softButton">
+         <property name="enabled">
+          <bool>true</bool>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">/* 设置按钮的属性 */
+
+QToolButton[objectName=&quot;softButton&quot;] {
+border:0px; /*取消按钮边界，使按钮透明*/
+color:white;
+}
+</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="icon">
+          <iconset>
+           <normaloff>:/image/below_soft.png</normaloff>:/image/below_soft.png</iconset>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>62</width>
+           <height>62</height>
+          </size>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QToolButton" name="clinicButton">
+         <property name="styleSheet">
+          <string notr="true">/* 设置按钮的属性 */
+
+QToolButton[objectName=&quot;clinicButton&quot;] {
+border:0px; /*取消按钮边界，使按钮透明*/
+color:white;
+}
+
+</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="icon">
+          <iconset>
+           <normaloff>:/image/below_clinic.png</normaloff>:/image/below_clinic.png</iconset>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>62</width>
+           <height>62</height>
+          </size>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QToolButton" name="repairButton">
+         <property name="styleSheet">
+          <string notr="true">/* 设置按钮的属性 */
+
+QToolButton[objectName=&quot;repairButton&quot;] {
+border:0px; /*取消按钮边界，使按钮透明*/
+color:white;
+}
+</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="icon">
+          <iconset>
+           <normaloff>:/image/below_repair.png</normaloff>:/image/below_repair.png</iconset>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>62</width>
+           <height>62</height>
+          </size>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QToolButton" name="myphoneButton">
+         <property name="styleSheet">
+          <string notr="true">/* 设置按钮的属性 */
+
+QToolButton[objectName=&quot;myphoneButton&quot;] {
+border:0px; /*取消按钮边界，使按钮透明*/
+color:white;
+}
+
+</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="icon">
+          <iconset>
+           <normaloff>:/image/below_phone.png</normaloff>:/image/below_phone.png</iconset>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>62</width>
+           <height>62</height>
+          </size>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <zorder>giflabel</zorder>
+     <zorder>checkButton</zorder>
+     <zorder>fullchecklabel</zorder>
+     <zorder>fullchecklabel</zorder>
+     <zorder>safetytaskButton</zorder>
+     <zorder>label_2</zorder>
+     <zorder>b1Button</zorder>
+     <zorder>c1Button</zorder>
+     <zorder>b3Button</zorder>
+     <zorder>qqButton</zorder>
+     <zorder>b2Button</zorder>
+     <zorder>c2Button</zorder>
+     <zorder>label_2</zorder>
+     <zorder>b1Button</zorder>
+     <zorder>c1Button</zorder>
+     <zorder>b3Button</zorder>
+     <zorder>qqButton</zorder>
+     <zorder>b2Button</zorder>
+     <zorder>c2Button</zorder>
+     <zorder>fullcheckButton</zorder>
+     <zorder>d3Button</zorder>
+     <zorder>d2Button</zorder>
+     <zorder>testButton</zorder>
+     <zorder>d1Button</zorder>
+     <zorder>e1Button</zorder>
+     <zorder>repairButton</zorder>
+     <zorder>e4Button</zorder>
+     <zorder>myphoneButton</zorder>
+     <zorder>e3Button</zorder>
+     <zorder>clinicButton</zorder>
+     <zorder>softButton</zorder>
+     <zorder>e2Button</zorder>
+    </widget>
+    <widget class="QWidget" name="page_2">
+     <widget class="QLabel" name="gif2label">
+      <property name="geometry">
+       <rect>
+        <x>350</x>
+        <y>140</y>
+        <width>161</width>
+        <height>151</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="page_3">
+     <widget class="QLabel" name="gif3label">
+      <property name="geometry">
+       <rect>
+        <x>370</x>
+        <y>120</y>
+        <width>171</width>
+        <height>181</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="page_4">
+     <widget class="QLabel" name="gif4label">
+      <property name="geometry">
+       <rect>
+        <x>313</x>
+        <y>51</y>
+        <width>241</width>
+        <height>191</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="page_5">
+     <widget class="QLabel" name="gif5label">
+      <property name="geometry">
+       <rect>
+        <x>320</x>
+        <y>50</y>
+        <width>261</width>
+        <height>221</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="page_6">
+     <widget class="QLabel" name="gif6label">
+      <property name="geometry">
+       <rect>
+        <x>330</x>
+        <y>50</y>
+        <width>261</width>
+        <height>241</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+   <widget class="QToolButton" name="f1Button">
+    <property name="geometry">
+     <rect>
+      <x>1</x>
+      <y>527</y>
+      <width>148</width>
+      <height>70</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>148</width>
+      <height>70</height>
+     </size>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">/* 设置按钮的属性 */
+
+QToolButton[objectName=&quot;f1Button&quot;] {
+border:0px; /*取消按钮边界，使按钮透明*/
+color:white;
+}
+QToolButton[objectName=&quot;f1Button&quot;]:hover {
+image:url(:/image/below_hover.png);/*鼠标放上去是显示的效果*/
+}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QToolButton" name="f2Button">
+    <property name="geometry">
+     <rect>
+      <x>155</x>
+      <y>527</y>
+      <width>148</width>
+      <height>70</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>148</width>
+      <height>70</height>
+     </size>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">/* 设置按钮的属性 */
+
+QToolButton[objectName=&quot;f2Button&quot;] {
+border:0px; /*取消按钮边界，使按钮透明*/
+color:white;
+}
+QToolButton[objectName=&quot;f2Button&quot;]:hover {
+image:url(:/image/below_hover.png);/*鼠标放上去是显示的效果*/
+}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QToolButton" name="f3Button">
+    <property name="geometry">
+     <rect>
+      <x>309</x>
+      <y>527</y>
+      <width>148</width>
+      <height>70</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>148</width>
+      <height>70</height>
+     </size>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">/* 设置按钮的属性 */
+
+QToolButton[objectName=&quot;f3Button&quot;] {
+border:0px; /*取消按钮边界，使按钮透明*/
+color:white;
+}
+QToolButton[objectName=&quot;f3Button&quot;]:hover {
+image:url(:/image/below_hover.png);/*鼠标放上去是显示的效果*/
+}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QToolButton" name="f4Button">
+    <property name="geometry">
+     <rect>
+      <x>463</x>
+      <y>527</y>
+      <width>148</width>
+      <height>70</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>148</width>
+      <height>70</height>
+     </size>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">/* 设置按钮的属性 */
+
+QToolButton[objectName=&quot;f4Button&quot;] {
+border:0px; /*取消按钮边界，使按钮透明*/
+color:white;
+}
+QToolButton[objectName=&quot;f4Button&quot;]:hover {
+image:url(:/image/below_hover.png);/*鼠标放上去是显示的效果*/
+}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QToolButton" name="f5Button">
+    <property name="geometry">
+     <rect>
+      <x>617</x>
+      <y>527</y>
+      <width>148</width>
+      <height>70</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>148</width>
+      <height>70</height>
+     </size>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">/* 设置按钮的属性 */
+
+QToolButton[objectName=&quot;f5Button&quot;] {
+border:0px; /*取消按钮边界，使按钮透明*/
+color:white;
+}
+QToolButton[objectName=&quot;f5Button&quot;]:hover {
+image:url(:/image/below_hover.png);/*鼠标放上去是显示的效果*/
+}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QToolButton" name="f6Button">
+    <property name="geometry">
+     <rect>
+      <x>771</x>
+      <y>527</y>
+      <width>148</width>
+      <height>70</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>148</width>
+      <height>70</height>
+     </size>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">/* 设置按钮的属性 */
+
+QToolButton[objectName=&quot;f6Button&quot;] {
+border:0px; /*取消按钮边界，使按钮透明*/
+color:white;
+}
+QToolButton[objectName=&quot;f6Button&quot;]:hover {
+image:url(:/image/below_hover.png);/*鼠标放上去是显示的效果*/
+}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <zorder>layoutWidget</zorder>
+   <zorder>layoutWidget</zorder>
+   <zorder>label</zorder>
+   <zorder>headButton</zorder>
+   <zorder>layoutWidget</zorder>
+   <zorder>layoutWidget</zorder>
+   <zorder>enterButton</zorder>
+   <zorder>stackedWidget</zorder>
+  </widget>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <customwidgets>
+  <customwidget>
+   <class>MenuButton</class>
+   <extends>QPushButton</extends>
+   <header location="global">menubutton.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>
